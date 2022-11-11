@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(fonts/Teko-Regular.ttf);
+}
+
+body {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(images/image-by-adam-chang.jpg);
+    background-size: cover;
+    width: 40vw;
+}
+
+#credit {
+    position: absolute;
+    bottom: 0vh;
+    font-size: 12px;
+    color: rgb(202, 199, 199);
+}
+
+a {
+    color: rgb(202, 199, 199);
+}
+
+#logo-holder {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 40vw;
+    background-color: rgba(195, 195, 201, 0.5);
+    font-family: Teko;
+    color: white;
+    font-size: 30px;
+    gap: 0.5vw;
+}
+
+#logo {
+    height: 14vh;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Dosis;
+    letter-spacing: 1px;
+}
+
+.form-div {
+    width: calc(60vw - 2vw);
+    padding-left: 2vw;
+}
+
+#top-div, #bottom-div {
+    height: 27vh;
+    background-color: rgb(240, 240, 240);
+}
+
+#top-div {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#top-div {
+    width: 50vw;
+}
+
+#my-form {
+    height: calc(70vh - 5px);
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    display: flex column;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#main-form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: auto;
+}
+
+#main-form-div h3 {
+    font-size: 0.7rem;
+}
+
+.row {
+    display: flex;
+    gap: 5rem;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 13rem;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(240, 240, 240);
+    font-size: 0.9rem;
+}
+
+.error {
+    font-size: 0.7rem;
+    color: red;
+    white-space: pre;
+}
+
+input:focus {
+    border: none;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+
+.input-invalid, .input-invalid:focus {
+    border: 2px solid red;
+}
+
+.input-valid, .input-valid:focus {
+    border: 2px solid green;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    margin-top: 4px;
+    background-color: rgb(10, 119, 68);
+    color: white;
+    width: 10vw;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#bottom-div {
+    font-size: 1rem;
+}
+
+#bottom-div a {
+    color: rgb(10, 119, 68);
+    text-decoration: none;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="img-container">
+            <div id="logo-holder">
+                <img id="logo" src="images/odin-lined.png">
+                <p>Sign-Up Form</p>
+            </div>
+            <p id="credit">Photo by Adam Chang | <a href="https://unsplash.com/@sametomorrow">Unsplash</a></p>
+        </div>
+
+        <div id="form-container">
+            <div class="form-div" id="top-div">
+                <div>
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+                        Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </div>
+
+            <form class="form-div" id="my-form">
+                <h3>Let's do this!</h3>
+
+                <div id="main-form-div">
+                    <div class="row">
+                        <div class="input-row">
+                            <label for="first_name">First Name*</label>
+                            <input type="text" id="first_name" class="eager" name="first_name" placeholder="John" required>
+                            <div id="first_name_error" class="error"></div>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="last_name">Last Name*</label>
+                            <input type="text" id="last_name" class="eager" name="last_name" placeholder="West" required>
+                            <div id="last_name_error" class="error"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-row">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" class="eager" name="email" placeholder="myemail@domain.com" required>
+                            <div id="email_error" class="error"></div>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="phone_number">Phone Number*</label>
+                            <input type="number" id="phone_number" name="phone_number" placeholder="111-222-1234" required>
+                            <div id="phone_number_error" class="error"></div>
+                        </div>   
+                    </div>
+
+                    <div class="row">
+                        <div class="input-row">
+                            <label for="password">Password*</label>
+                            <input type="password" id="password" class="eager" name="password" required>
+                            <div id="password_error" class="error"></div>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="confirm_password">Confirm Password*</label>
+                            <input type="password" id="confirm_password" class="eager" name="confirm_password" required>
+                            <div id="confirm_password_error" class="error"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-div" id="bottom-div">
+                <p>
+                    <button type="submit" form="my-form">Create Account</button>
+                    <p>Already have an account? <a href="https://samoore036.github.io/TOP-form/">Log in</a></p>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
